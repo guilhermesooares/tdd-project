@@ -1,0 +1,1 @@
+Testes unitários são mais isolados, focados em um recurso específico. Enquanto isso, testes funcionais são mais abrangentes. Além disso, testes unitários são de execução rápida, enquanto os testes funcionais são mais caros.
