@@ -1,0 +1,1 @@
+O processo começa com a escrita do teste funcional. Após isso, é escrito o código que faz o teste passar. Feito isso, verifica se o código precisa de refatoração. Se sim, escreve-se os testes unitários e o código que faz esses testes passarem. Feito isso, realiza a refatoração, se necessário.
