@@ -59,6 +59,10 @@ class ItemModelTest(TestCase):
     self.assertEqual(second_saved_item.text, 'O segundo item')
 
 class ListViewTest(TestCase):
+  def test_uses_list_template(self):
+    response = self.client.get('/lists/the-only-list-in-the-world/')
+    self.assertTemplateUsed(response, 'list.html')
+
   def test_displays_all_items(self):
     Item.objects.create(text='itemey 1')
     Item.objects.create(text='itemey 2')
@@ -67,3 +71,4 @@ class ListViewTest(TestCase):
 
     self.assertContains(response, 'itemey 1')
     self.assertContains(response, 'itemey 2')
+    
